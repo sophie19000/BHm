@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MetaMask Wallet Functions</title>
+  <meta name="viewport" content="width=350, initial-scale=1.0" />
+  <title>MetaMask Wallet Features</title>
   <style>
     body {
       background-color: #ffffff;
@@ -11,83 +11,114 @@
       color: #333;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .wrapper {
+      width: 350px;
+      height: 600px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
     }
 
     header {
       background-color: #f6851b;
-      padding: 20px;
+      padding: 15px;
       text-align: center;
       color: white;
     }
 
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 18px;
     }
 
     .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
+      padding: 15px;
     }
 
     .function {
-      background-color: #f2f2f2;
-      border-left: 5px solid #f6851b;
-      padding: 15px;
-      margin-bottom: 20px;
+      background-color: #f7f7f7;
+      border-left: 4px solid #f6851b;
+      padding: 12px;
+      margin-bottom: 15px;
       border-radius: 5px;
     }
 
     .function h2 {
-      margin-top: 0;
-      font-size: 20px;
+      font-size: 15px;
+      margin: 0 0 8px 0;
     }
 
     .function p {
-      margin: 5px 0 0 0;
+      font-size: 13px;
+      margin: 0;
+      line-height: 1.4;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>MetaMask Wallet - Key Functions</h1>
-  </header>
+  <div class="wrapper">
+    <header>
+      <h1>MetaMask Wallet Features</h1>
+    </header>
 
-  <div class="container">
-    <div class="function">
-      <h2>1. Wallet Creation & Import</h2>
-      <p>Create a new wallet or import an existing one using a secret recovery phrase.</p>
-    </div>
+    <div class="container">
 
-    <div class="function">
-      <h2>2. Secure Key Storage</h2>
-      <p>Safely stores your private keys locally on your device, encrypted with a password.</p>
-    </div>
+      <div class="function">
+        <h2>1. Create & Import Wallet</h2>
+        <p>Users can create a new wallet secured by a seed phrase or import an existing one using their 12/24-word recovery phrase. This ensures portability and easy access across devices.</p>
+      </div>
 
-    <div class="function">
-      <h2>3. Send & Receive Crypto</h2>
-      <p>Send and receive Ethereum and other ERC-20 tokens easily.</p>
-    </div>
+      <div class="function">
+        <h2>2. Secure Private Key Storage</h2>
+        <p>Private keys are stored locally in the user's browser, encrypted with a password. MetaMask never uploads or accesses these keys remotely, ensuring user control.</p>
+      </div>
 
-    <div class="function">
-      <h2>4. DApp Browser Integration</h2>
-      <p>Connect to decentralized applications (DApps) directly from your browser.</p>
-    </div>
+      <div class="function">
+        <h2>3. Send & Receive Cryptocurrencies</h2>
+        <p>Send and receive ETH and ERC-20 tokens. Transactions are signed and broadcast securely, with gas fee options (low, medium, high) based on the Ethereum network load.</p>
+      </div>
 
-    <div class="function">
-      <h2>5. Network Switching</h2>
-      <p>Switch between Ethereum Mainnet, testnets, and custom networks like Binance Smart Chain.</p>
-    </div>
+      <div class="function">
+        <h2>4. Connect to DApps</h2>
+        <p>Interact directly with decentralized apps (DApps) on Web3 websites. MetaMask injects web3 objects into the browser to enable smart contract interactions securely.</p>
+      </div>
 
-    <div class="function">
-      <h2>6. Token Management</h2>
-      <p>Add, hide, or manage various ERC-20 tokens manually or automatically.</p>
-    </div>
+      <div class="function">
+        <h2>5. Switch Networks</h2>
+        <p>Supports Ethereum Mainnet, testnets (Ropsten, Goerli), and custom networks like Binance Smart Chain. Users can add or switch networks manually or via prompts from DApps.</p>
+      </div>
 
-    <div class="function">
-      <h2>7. Transaction History</h2>
-      <p>View your full history of sent and received transactions.</p>
+      <div class="function">
+        <h2>6. Manage Tokens</h2>
+        <p>Users can search for, add, and organize ERC-20 tokens. MetaMask can auto-detect popular tokens, and allows manual addition using contract addresses.</p>
+      </div>
+
+      <div class="function">
+        <h2>7. View Transaction History</h2>
+        <p>Every transaction made through the wallet is logged with timestamps, status (success/fail), and linked to a block explorer (like Etherscan) for full transparency.</p>
+      </div>
+
+      <div class="function">
+        <h2>8. Signing Messages</h2>
+        <p>Allows users to cryptographically sign messages and data, often used for login/authentication in decentralized apps without needing passwords.</p>
+      </div>
+
+      <div class="function">
+        <h2>9. Swap Tokens</h2>
+        <p>MetaMask includes a built-in token swap feature that lets users exchange tokens directly within the wallet using aggregators like 0x or Uniswap.</p>
+      </div>
+
+      <div class="function">
+        <h2>10. Hardware Wallet Support</h2>
+        <p>Users can connect hardware wallets like Ledger and Trezor for additional security while using MetaMask as the interface.</p>
+      </div>
+
     </div>
   </div>
 </body>
